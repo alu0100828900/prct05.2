@@ -13,6 +13,10 @@ def aproximacion (n):
 print '\nEl valor de pi con 35 decimales es %.35f\n' %PI
 veces = int(sys.argv[2])
 n=int(sys.argv[1])
+while (n<=0):
+   print 'la funcion no se puede ejecutar elija otrio inrtervalo'
+   n = int(raw_input('Valor de n: '))
+   
 l=[]
 print 'i   PI35DT                               listai                                PI35DT-listai\n'
 for vez in range (1, veces+1):
